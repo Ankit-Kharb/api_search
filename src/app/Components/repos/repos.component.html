@@ -1,0 +1,20 @@
+
+<div class="card mt-3">
+    <div class="card-header">
+        <h4>Gihub repos</h4>
+    </div>
+    <div class="card-body">
+        <ul class="list-group" *ngFor = "let repo of repos ;index as i">
+            <li class="list-group-item d-flex justify-content-between">
+                <a href="{{repo.html_url}}" class="text-primary font-weight-bold" target="blank" >{{repo.name}}</a>
+                <span class="badge badge-success">{{repo.forks}} Forks</span>
+               
+                <button class="btn btn-warning " (click)="getcommittes(repo.id,i)">Show Top Committies</button>
+                
+            </li>
+            <app-committees *ngIf="touched[i]==true" [committes]="committes"></app-committees>
+           
+        </ul>
+       
+    </div>
+</div>

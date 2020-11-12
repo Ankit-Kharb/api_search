@@ -1,0 +1,16 @@
+<div class="card mt-3">
+    <div class="card-header">
+        <h4>Committies</h4>
+    </div>
+    <div class="card-body">
+<ul class="list-group " *ngFor = "let user of committes">
+
+    <li class="list-group-item col-sm-4 d-flex justify-content-between">
+        <a href="/" class="text-primary font-weight-bold" target="blank" >{{user.login}}</a>
+        <span class="badge badge-success">{{user.contributions}} Forks</span>    
+    </li>
+ 
+   
+    
+</ul>
+</div>
