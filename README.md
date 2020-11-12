@@ -1,6 +1,7 @@
-# Githubapi
+# Github Api Search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+## Live At
+`https://apisearch-8bc52.web.app/`
 
 ## Development server
 
